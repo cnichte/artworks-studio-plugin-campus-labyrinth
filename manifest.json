@@ -1,0 +1,21 @@
+{
+  "$schema": "https://artworks.studio/schemas/plugin-manifest.json",
+  "id": "community-plugin-campus-labyrinth",
+  "name": "Campus Labyrinth",
+  "version": "0.1.0",
+  "minAppVersion": "0.10.9",
+  "description": "Ein externer Labyrinth-Backdrop fuer Campus-Projekte.",
+  "author": "Art.Works! Studio Community",
+  "contributes": {
+    "backdrops": [
+      {
+        "id": "campus-labyrinth",
+        "provider": "asset-backed",
+        "campusAssets": [
+          "./campus-labyrinth.asset.json"
+        ]
+      }
+    ]
+  },
+  "permissions": []
+}

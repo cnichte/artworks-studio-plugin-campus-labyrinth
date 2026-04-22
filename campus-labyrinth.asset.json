@@ -1,0 +1,79 @@
+{
+  "id": "campus-labyrinth",
+  "version": 1,
+  "category": "campus",
+  "kind": "campus-template",
+  "name": "Campus Labyrinth",
+  "description": "Externer Labyrinth-Backdrop fuer den GitHub-Roundtrip-Test.",
+  "badge": "Community",
+  "sortOrder": 115,
+  "isSeed": false,
+  "defaults": {
+    "templateId": "campus-labyrinth",
+    "variantId": "labyrinth",
+    "campusArea": {
+      "label": "Campusflaeche",
+      "campusOrigin": {
+        "x": -4500,
+        "y": -4500
+      },
+      "width": 9000,
+      "height": 9000,
+      "tilePattern": {
+        "kind": "square",
+        "sizeCm": 100,
+        "lineColor": "#d8ccb8"
+      }
+    },
+    "backdrop": {
+      "sceneVariant": "labyrinth",
+      "world": {
+        "kind": "labyrinth-walls",
+        "columns": 14,
+        "rows": 14,
+        "corridorWidthCm": 520,
+        "wallThicknessCm": 80,
+        "wallHeightCm": 500,
+        "entranceCount": 4,
+        "seed": 187
+      }
+    },
+    "buildingSites": [
+      {
+        "id": "buildingsite1",
+        "label": "Baugrund 1",
+        "campusOrigin": {
+          "x": -2250,
+          "y": -2250
+        },
+        "width": 4500,
+        "height": 4500,
+        "hasEnvelope": true
+      }
+    ],
+    "buildingDefaults": {
+      "finishes": {
+        "walls": { "material": "gallery-white", "color": "#f4f1ea" },
+        "floor": { "material": "oak-parquet", "color": "#b79a76" },
+        "ceiling": { "material": "gallery-white", "color": "#fbf9f3" }
+      }
+    },
+    "envelope": {
+      "floorPadding": 0.8,
+      "ceilingPadding": 0.5,
+      "windowWall": "east",
+      "windowOffset": 0.14,
+      "windowPlaneHeightMin": 2.4,
+      "windowTopInset": 0.7,
+      "windowCenterHeightRatio": 0.58,
+      "portalWidthRatio": 0.22,
+      "portalWidthMax": 3.8,
+      "palette": {
+        "floorColor": "#d6d1c6",
+        "ceilingColor": "#f4f1ea",
+        "frameColor": "#393a3c",
+        "portalColor": "#ddd7cb"
+      }
+    }
+  }
+}
