@@ -10,7 +10,7 @@
     "backdrops": [
       {
         "id": "campus-labyrinth",
-        "provider": "asset-backed",
+        "provider": "./dist/index.js",
         "campusAssets": [
           "./campus-labyrinth.asset.json"
         ]

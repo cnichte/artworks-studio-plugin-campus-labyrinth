@@ -1,14 +1,21 @@
 {
   "name": "@artworks-studio/community-plugin-campus-labyrinth",
   "version": "0.1.0",
+  "type": "module",
   "private": false,
   "description": "Public backdrop plugin for testing the Art.Works! Studio plugin roundtrip.",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/cnichte/artworks-studio-plugin-campus-labyrinth.git"
   },
   "files": [
+    "src",
+    "dist",
     "manifest.json",
     "campus-labyrinth.asset.json",
     "README.md"
